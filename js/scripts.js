@@ -263,6 +263,7 @@ const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
   spaceBetween: 0,
   autoHeight: true,
   speed: 400,
+  initialSlide: 3,
   pagination: {
     el: ".slider-tiles-pagination",
     clickable: true,

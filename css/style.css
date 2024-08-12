@@ -1533,7 +1533,7 @@ body.popup-open {
 }
 .popup-outer-box {
   display: none;
-  padding: 50px 10px;
+  padding: 20px 10px;
   animation: fadein ease 0.2s;
   -ms-flex-align: center;
       align-items: center;
@@ -1971,6 +1971,40 @@ body.popup-open {
   }
   .tabs-slider-box .slider-tabs-thumbs .slider-wrap {
     margin: 0 -2rem;
+  }
+}
+@media (min-width: 1024px) and (max-height: 799px) {
+  .main-top-box .box-inner-wrap {
+    padding-top: 110px;
+    padding-bottom: 50px;
+    font-size: 2rem;
+  }
+  .main-top-box .h1-title {
+    font-size: 5rem;
+  }
+  .popup-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .popup-box .frm-row .frm-field {
+    margin-bottom: 5px;
+  }
+  .popup-box .field-button {
+    margin-bottom: 20px;
+  }
+  .popup-box .popup-title-wrap {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .popup-box .popup-title {
+    font-size: 3.6rem;
+  }
+  .popup-box .btn-action-ico.ico-close {
+    top: 10px;
+    right: 10px;
+  }
+  .popup-box .btn-action-ico.ico-close:before {
+    background-size: 20px auto;
   }
 }
 @media (min-width: 1400px) {

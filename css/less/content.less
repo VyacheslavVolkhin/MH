@@ -332,7 +332,7 @@ body.popup-open {
 }
 .popup-outer-box {
 	display: none;
-	padding: 50px 10px;
+	padding: 20px 10px;
 	animation: fadein ease 0.2s;
 	align-items: center;
 	justify-content: center;
@@ -732,6 +732,7 @@ body.popup-open {
 		}
 	}
 }
+
 @media (min-width: 1024px) and (max-width: 1199px) {
 	.main-form-box {
 		.title-inner-wrap {
@@ -788,6 +789,45 @@ body.popup-open {
 	.tabs-slider-box .slider-tabs-thumbs .slider-wrap {
 		margin: 0 -2rem;
 	}
+}
+@media (min-width: 1024px) and (max-height: 799px) {
+	.main-top-box {
+		.box-inner-wrap {
+			padding-top: 110px;
+			padding-bottom: 50px;
+			font-size: 2rem;
+		}
+		.h1-title {
+			font-size: 5rem;
+		}
+	}
+	.popup-box {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		.frm-row {
+			.frm-field {
+				margin-bottom: 5px;
+			}
+		}
+		.field-button {
+			margin-bottom: 20px;
+		}
+		.popup-title-wrap {
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+		.popup-title {
+			font-size: 3.6rem;
+		}
+		.btn-action-ico.ico-close {
+			top: 10px;right: 10px;
+			&:before {
+				background-size: 20px auto;
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-height: 899px) {
 }
 @media (min-width: 1400px) {
 	.main-top-box {
