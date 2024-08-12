@@ -1,8 +1,98 @@
 
 <!-- footer -->
 <footer class="footer">
-	<div class="inner-wrap">
-		333333
+	<!--footer-main-panel-->
+	<div class="footer-main-panel cnt-section">
+		<div class="inner-wrap">
+			<div class="info-inner-wrap">
+				<div class="email-wrap">
+					<a href="mailto:info@mh.ru" class="link-email">info@mh.ru</a>
+				</div>
+				<div class="contacts-wrap">
+					<div class="phone-wrap">
+						<a href="tel:84951111111" class="link-phone">+7 (495) 111 11 11</a>
+					</div>
+					<p>г. Москва, 3-я ул. Ямского поля, д. 18</p>
+				</div>
+				<div class="soc-wrap">
+					<a href="" class="btn-action-ico button-soc">
+						<img src="./img/icons/soc-vk.svg" alt="">
+					</a>
+					<a href="" class="btn-action-ico button-soc">
+						<img src="./img/icons/soc-tg.svg" alt="">
+					</a>
+					<a href="" class="btn-action-ico button-soc">
+						<img src="./img/icons/soc-in.svg" alt="">
+					</a>
+					<a href="" class="btn-action-ico button-soc">
+						<img src="./img/icons/soc-dzen.svg" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
+	<!--/footer-main-panel-->
+	<!--footer-bottom-panel-->
+	<div class="footer-bottom-panel cnt-section">
+		<div class="inner-wrap">
+			<div class="info-inner-wrap">
+				<div class="info-wrap">
+					<p>&copy;Copywriting, 2024</p>
+				</div>
+				<div class="info-wrap">
+					<ul class="list">
+						<li><a href="">Согласие на обработку персональных данных</a></li>
+						<li><a href="">Политика конфиденциальности</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/footer-bottom-panel-->
 </footer>
 <!-- /footer -->
+
+
+<!--popup-outer-box-->
+<div class="popup-outer-box" id="popup-callback">
+	<div class="popup-box">
+		<a href="" class="btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Rate the features for free</div>
+			<p>Fill out the application form — Manager He will contact you during business hours.</p>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-inner-wrap">
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="text" class="form-input" placeholder="Your name">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="tel" pattern="^?{1,3}?[-.]?($?{1,4}?$?)[-.]?{1,4}[-.]?{1,9}$" class="form-input"
+							placeholder="Telephone" required>
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:[a-zA-Z0-9-]+)*$/"
+							class="form-input" placeholder="E-mail" required>
+					</div>
+				</div>
+				<div class="frm-row-submit">
+					<div class="frm-field field-button">
+						<button type="submit" class="btn">Submit your application</button>
+					</div>
+					<div class="frm-field field-check">
+						<div class="frm-select">
+							<input type="checkbox" id="popup">
+							<label for="popup">By clicking the "<b>Submit your application”</b> button, you consent to the processing of your personal data and receiving
+							information messages from</label>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div><!--/popup-outer-box-->

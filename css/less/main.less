@@ -1,13 +1,22 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #26303C;
+	--clr-att: #FF6F80;
+	--clr-att-second: #4DB6DA;
+	--clr-bg-light: #F4F9FF;
+	--clr-light: #e4e4e;
 
-	--min: 320px;
-	--max: 1200px;
+	--min: 375px;
+	--max: 1360px;
+    
+    --paddingContainer: 15px;
+    --paddingSection: 30px;
+
+	--filter-dark: brightness(0) grayscale(1);
+	--filter-white: brightness(0) invert(1);
 
 	font-size: 10px;
 }
-.sl-wrap~.sl-wrap {
+.sl-wrap:not(.swiper-slide)~.sl-wrap {
 	display: none;
 }
 .elm-hidden {
@@ -17,11 +26,15 @@
 			main styles
 \* ----------------------------------- */
 body {
-	color: var(--clr-base, #000);
+	color: var(--clr-base);
 	background: #fff;
+    font-size: 16px;
+    line-height: (26/16);
+	letter-spacing: -0.01em
 }
-p, ul, ol {
+p, ul, ol, table, blockquote, .bq-text {
 	position: relative;
+    margin-bottom: (26/16em);
 	img {
 		max-width: 100%;
 	}
@@ -29,23 +42,90 @@ p, ul, ol {
 		margin-bottom: 0 !important;
 	}
 }
-
 li {
 	position: relative;
-}
-a {
-	text-decoration: none;
-	color: var(--clr-att, #f00);
-	&:hover {
-		text-decoration: none;
-		color: var(--clr-att, #f00);
+	padding-left: 24px;
+	&:before {
+		content: "";
+		display: block;
+		width: 2px;height: 2px;
+		border-radius: 50%;
+		background: currentColor;
+		position: absolute;
+		top: (13/16em);
+		left: 11px;
+		margin-top: -1px;
 	}
 }
+.menu, .list {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+        color: var(--clr-att-second);
+    }
+}
 a.link-main, .link-main {
-	text-decoration: none;
-	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+.link-phone, .link-email, .link-location {
+    white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	padding-left: 28px;
+	line-height: 1.2;
+	color: inherit;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	&:before {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		background: url(../img/icons/link-phone.svg) center no-repeat;
+		background-size: 100% auto;
+		top: 0.6em;
+		left: 0;
+		margin-top: -12px;
+	}
+	&.link-text {
+		display: inline;
+		padding: 0;
+		&:before {
+			display: none;
+		}
+	}
+}
+.link-email {
+	&:before {
+		background-image: url(../img/icons/link-email.svg);
+	}
+}
+.link-location {
+	white-space: normal;
+	&:before {
+		background-image: url(../img/icons/link-location.svg);
+	}
+}
+a {
+	&.link-phone, &.link-email, &.link-location {
+		&:hover {
+			color: var(--clr-att);
+		}
 	}
 }
 h1, .h1-title,
@@ -56,7 +136,98 @@ h5, .h5-title,
 h6, .h6-title {
 	display: block;
 	position: relative;
+    font-weight: bold;
+    margin: 10px 0;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: normal;
     &:first-child {
         margin-top: 0;
+    }
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.h1-title, h1 {
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	font-weight: bold;
+	margin: 15px 0;
+}
+.h2-title, h2 {
+	font-size: 34px;
+	letter-spacing: -0.01em;
+	line-height: 1.46;
+	font-weight: 600;
+	margin: 15px 0;
+}
+.h3-title, h3 {
+	font-size: 24px;
+	line-height: 1.55;
+	font-weight: bold;
+	letter-spacing: -0.01em;
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-att-second, .title-att-second {
+    color: var(--clr-att-second);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
+}
+@media (max-width: 1399px) {
+    :root {
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 1199px) {
+    :root {
+        font-size: 9px;
+    }
+}
+@media (max-width: 1023px) {
+    :root {
+        font-size: 8px;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        font-size: 7px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --paddingContainer: 30px;
+		--paddingSection: 8rem;
+    }
+	h4, .h4-title,
+	h5, .h5-title,
+	h6, .h6-title {
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin: 16px 0;
+	}
+	.h1-title, h1 {
+		font-size: 8.2rem;
+		margin: 3rem 0;
+	}
+	.h2-title, h2 {
+		font-size: 4.8rem;
+		margin: 24px 0;
+	}
+	.h3-title, h3 {
+		font-size: 3.4rem;
+		font-weight: 600;
+	}
+}
+@media (min-width: 1400px) {
+    :root {
+        --paddingContainer: 40px;
     }
 }

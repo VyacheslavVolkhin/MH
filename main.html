@@ -10,47 +10,753 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
 </head>
 
 <body>
     <!-- wrap -->
-    <div class="wrap">
+    <div class="wrap wrap-header-light">
 
 
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <ul class="menu">
+                            <li><a href="" class="btn-menu active">Why choose MH?</a></li>
+                            <li><a href="" class="btn-menu">What can MH?</a></li>
+                            <li><a href="" class="btn-menu">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="action-inner-wrap">
+                    <a href="" class="btn button-border js-popup-open" data-popup="popup-callback">start</a>
+                </div>
+                <div class="action-lang-wrap popup-lang-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-toggle js-btn-popup-toggle">En</a>
+                    <div class="popup-content-block js-popup-block">
+                        <ul>
+                            <li><a href="" class="btn-lang">RU</a></li>
+                            <li><a href="" class="btn-lang active">EN</a></li>
+                            <li><a href="" class="btn-lang">DE</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
         <!-- page -->
-        <div class="page">
-            2222
+        <div class="page-full">
+
+            <!--main-top-box-->
+            <div class="main-top-box">
+                <div class="bg-inner-wrap">
+                    <img src="./img/bg-main.jpg" alt="" class="img-bg-cover">
+                </div>
+                <div class="box-inner-wrap">
+                    <div class="info-inner-wrap">
+                        <div class="text-inner-wrap">
+                            <h1 class="h1-title">Meet <br>Machine Hiring!</h1>
+                            <p>Simplify recruitment with our AI-powered ATS solution. Automate tasks, make smarter decisions, and streamline your
+                                hiring process with the latest GenAI technology.</p>
+                            <p>Chat with Machine Hiring now!</p>
+                        </div>
+                        <div class="action-inner-wrap">
+                            <a href="" class="btn">try</a>
+                        </div>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="elm-photo">
+                            <img src="./img/top.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/main-top-box-->
+
+            <!--tiles-info-box-->
+            <div class="tiles-info-box">
+                <div class="box-inner-wrap">
+                    <div class="title-inner-wrap">
+                        <h2 class="h2-title">With Matching Hiring, you will achieve:</h2>
+                    </div>
+                    <div class="items-inner-wrap">
+                        <div class="items-wrap">
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-info">
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/info01.svg" alt="">
+                                    </div>
+                                    <div class="tile-total">30<span class="tile-total-info">%</span></div>
+                                    <div class="tile-title">increase in offers</div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-info">
+                                    <div class="tile-ico">
+                                        <img src="./img/icons/info02.svg" alt="">
+                                    </div>
+                                    <div class="tile-total">60<span class="tile-total-info">%</span></div>
+                                    <div class="tile-title">increase in the volume of&nbsp;hired&nbsp;employees</div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/tiles-info-box-->
+
+            <!--tiles-info-tabs-box-->
+            <div class="tiles-info-tabs-box section-bg">
+                <div class="box-inner-wrap">
+                    <div class="title-box text-large">
+                        <h2 class="h2-title title-inner">Why choose <span class="title-att-second">Machine Hiring?</span></h2>
+                        <p><b>Machine Hiring</b> — your smart recruitment assistant. <br>We will reduce your HR costs and increase hiring by
+                            over 50% from day one.</p>
+                    </div>
+                    <!--tabs-slider-box-->
+                    <div class="tabs-slider-box">
+                        <!-- slider thumbs -->
+                        <div class="slider-inner-wrap slider-tabs-thumbs">
+                            <div class="btn-action-ico ico-arrow ico-arrow-prev button-slider-tabs-thumbs-prev"></div>
+                            <div class="btn-action-ico ico-arrow ico-arrow-next button-slider-tabs-thumbs-next"></div>
+                            <div class="slider-wrap swiper">
+                                <div class="slider swiper-wrapper">
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="btn-slider-tab">
+                                            <div class="button-title">Reducing <br>recruitment time</div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="btn-slider-tab">
+                                            <div class="button-title">Simplifying the search <br>and hiring process</div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="btn-slider-tab">
+                                            <div class="button-title">Improving <br>recruitment quality</div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="btn-slider-tab">
+                                            <div class="button-title">Full utilization of your <br>resume database</div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /slider thumbs -->
+                        <!-- slider main -->
+                        <div class="slider-inner-wrap slider-tabs-main">
+                            <div class="slider-wrap swiper">
+                                <div class="slider swiper-wrapper">
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="slider-content-wrap">
+                                            <div class="slider-info-wrap">
+                                                <h3 class="h3-title">Reducing recruitment time</h3>
+                                                <p><b>Result:</b></p>
+                                                <h3 class="h4-title">Recruitment time for a position is reduced by up to 60%.</h3>
+                                                <ul>
+                                                    <li>Using NLP: We analyze resumes and job descriptions.</li>
+                                                    <li>Multilevel filtering: Simplifies the recruitment process.</li>
+                                                    <li>Predictive analysis: Predicts necessary skills for more accurate matching.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider-photo-wrap">
+                                                <div class="elm-photo">
+                                                    <img src="./img/slider.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="slider-content-wrap">
+                                            <div class="slider-info-wrap">
+                                                <h3 class="h3-title">Reducing recruitment time</h3>
+                                                <p><b>Result:</b></p>
+                                                <h3 class="h4-title">Recruitment time for a position is reduced by up to 60%.</h3>
+                                                <ul>
+                                                    <li>Using NLP: We analyze resumes and job descriptions.</li>
+                                                    <li>Multilevel filtering: Simplifies the recruitment process.</li>
+                                                    <li>Predictive analysis: Predicts necessary skills for more accurate matching.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider-photo-wrap">
+                                                <div class="elm-photo">
+                                                    <img src="./img/slider.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="slider-content-wrap">
+                                            <div class="slider-info-wrap">
+                                                <h3 class="h3-title">Reducing recruitment time</h3>
+                                                <p><b>Result:</b></p>
+                                                <h3 class="h4-title">Recruitment time for a position is reduced by up to 60%.</h3>
+                                                <ul>
+                                                    <li>Using NLP: We analyze resumes and job descriptions.</li>
+                                                    <li>Multilevel filtering: Simplifies the recruitment process.</li>
+                                                    <li>Predictive analysis: Predicts necessary skills for more accurate matching.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider-photo-wrap">
+                                                <div class="elm-photo">
+                                                    <img src="./img/slider.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                    <!--sl-wrap-->
+                                    <div class="sl-wrap swiper-slide">
+                                        <div class="slider-content-wrap">
+                                            <div class="slider-info-wrap">
+                                                <h3 class="h3-title">Reducing recruitment time</h3>
+                                                <p><b>Result:</b></p>
+                                                <h3 class="h4-title">Recruitment time for a position is reduced by up to 60%.</h3>
+                                                <ul>
+                                                    <li>Using NLP: We analyze resumes and job descriptions.</li>
+                                                    <li>Multilevel filtering: Simplifies the recruitment process.</li>
+                                                    <li>Predictive analysis: Predicts necessary skills for more accurate matching.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="slider-photo-wrap">
+                                                <div class="elm-photo">
+                                                    <img src="./img/slider.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/sl-wrap-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /slider main -->
+                    </div>
+                    <!--/tabs-slider-box-->
+                    <div class="slider-pagination slider-tabs-pagination"></div>
+                </div>
+            </div>
+            <!--/tiles-info-tabs-box-->
+
+            <!--info-box-->
+            <div class="info-box">
+                <div class="box-inner-wrap">
+                    <div class="title-box">
+                        <h2 class="h2-title title-inner">What can <span class="title-att-second">Machine Hiring</span> do?</h2>
+                        <p>Get Started with Machine Hiring and revolutionize your recruitment process!</p>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab01">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab02">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab03">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab04">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab05">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-inner-wrap js-tab-block" data-tab="tab06">
+                            <div class="elm-photo">
+                                <img src="./img/info.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-inner-wrap">
+                        <div class="items-wrap js-tabs-nav">
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab01" class="tile-button active">AI for Recruitment</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab01">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab02" class="tile-button">GenAI Human Language Search</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab02">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab03" class="tile-button">Flawless Usability</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab03">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab04" class="tile-button">AI for Recruitment</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab04">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab05" class="tile-button">Maximize Your Resume Database</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab05">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap">
+                                <div class="item-tile-question">
+                                    <a href="" data-tab="tab06" class="tile-button">Focus on What Matters</a>
+                                    <div class="tile-tab-block js-tab-block" data-tab="tab06">
+                                        <div class="tile-photo">
+                                            <img src="./img/info.png" alt="">
+                                        </div>
+                                        <p>We're not the first to use AI in hiring, but we know how to make it truly effective. Built on years of experience, our AI takes your HR to the next level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/info-box-->
+
+            <!--subscribe-box-->
+            <div class="subscribe-box section-bg">
+                <div class="bg-inner-wrap">
+                    <img src="./img/bg-main.jpg" alt="" class="img-bg-cover">
+                </div>
+                <div class="box-inner-wrap">
+                    <div class="title-box">
+                        <div class="title-action">
+                            <a href="" class="btn button-light">TRY FREE</a>
+                        </div>
+                        <h2 class="h2-title title-inner">Request a demo</h2>
+                        <p>Leave a request and get access to the demo version for 30 days for free</p>
+                    </div>
+                    <div class="form-inner-wrap">
+                        <form action="/" class="frm-main-button">
+                            <div class="field-input">
+                                <input type="text" class="form-input inp-light inp-content inp-mobile-small" placeholder="E-mail">
+                            </div>
+                            <div class="field-button">
+                                <button type="submit" class="btn button-mobile-small">Request a demo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--/subscribe-box-->
+
+            <!--before-after-box-->
+            <div class="before-after-box">
+                <div class="box-inner-wrap">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-list">
+                                <h2 class="tile-title h2-title">Before <br>Implementation:</h2>
+                                <ul class="list">
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You do not use or rarely utilize your resume database</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You are not effectively utilizing the resumes of candidates you added earlier.</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You do not leverage the advantages of AI in recruitment</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You keep the recruitment process complex and inaccurate</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">The recruitment process is routine and lengthy</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/cross.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">It can take up to one and a half months or even longer from the first contact to an offer</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap">
+                            <div class="item-tile-list tile-att">
+                                <h2 class="tile-title h2-title">After <br>Implementation:</h2>
+                                <ul class="list">
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You utilize your resume database 100%</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You have an efficient and free source of relevant candidates</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You effectively use AI for recruitment</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You improve quality and speed while reducing recruitment costs by 40%</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">The recruitment process becomes convenient and fast</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tile-info">
+                                            <div class="tile-ico">
+                                                <img src="./img/icons/check.svg" alt="">
+                                            </div>
+                                            <div class="tile-info-title">You increase the number of offers by up to 30%, interview attendance, and hiring volume by up to 60%</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+            <!--/before-after-box-->
+
+            <!--tiles-slider-box-->
+            <div class="tiles-slider-box">
+                <div class="box-inner-wrap">
+                    <div class="title-box title-left">
+                        <h2 class="h2-title title-inner">Development plans? <br>At what stage is it?</h2>
+                        <p>By choosing Machine Hiring, you will not only elevate your HR to a significantly higher level immediately, but you will
+                            also benefit from unique future enhancements according to our Road Map, continually improving your processes with us:</p>
+                    </div>
+                    <div class="slider-inner-wrap slider-tiles">
+                        <div class="slider-wrap swiper">
+                            <div class="slider swiper-wrapper">
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="item-tile-info-step" data-index="0">
+                                        <div class="tile-info">November 2023</div>
+                                        <div class="tile-title">Product idea</div>
+                                        <div class="tile-text">The text presented is an alternative to the traditional lorem ipsum. It is a "fish" text, often used in print and web
+                                            design.</div>
+                                        <div class="tile-number">01</div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="item-tile-info-step" data-index="1">
+                                        <div class="tile-info">December 2023</div>
+                                        <div class="tile-title">Development start</div>
+                                        <div class="tile-text">The text presented is an alternative to the traditional lorem ipsum. This is "lorem ipsum", often used in printing and
+                                            web design.</div>
+                                        <div class="tile-number">02</div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="item-tile-info-step" data-index="2">
+                                        <div class="tile-info">April 2024</div>
+                                        <div class="tile-title">Internal testing and revisions</div>
+                                        <div class="tile-text">The presented text is an alternative to the traditional lorem ipsum. It is placeholder text, commonly used in printing
+                                            and web design.</div>
+                                        <div class="tile-number">03</div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="item-tile-info-step" data-index="3">
+                                        <div class="tile-info">June 2024</div>
+                                        <div class="tile-title">Adding Chat 5 in 1</div>
+                                        <div class="tile-text">WhatsApp, Telegram, Email, phone calls, and video calls with candidates and internal employees through a unified chat
+                                            window right within the system.</div>
+                                        <div class="tile-number">04</div>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                            </div>
+                        </div>
+                        <div class="slider-pagination slider-tiles-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!--/tiles-slider-box-->
+
+            <!--main-form-box-->
+            <div class="main-form-box section-bg">
+                <div class="bg-inner-wrap">
+                    <img src="./img/bg-form.svg" alt="">
+                </div>
+                <div class="box-inner-wrap">
+                    <div class="form-inner-wrap">
+                        <div class="title-inner-wrap">
+                            <h2 class="h3-title title-inner">Speed up recruitment
+                                by&nbsp;two times!</h2>
+                            <p>Start using AI now and reduce costs
+                                and&nbsp;time&nbsp;by&nbsp;50%.</p>
+                        </div>
+                        <form action="/" class="frm-inner-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="text" class="form-input" placeholder="Your name">
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="tel" pattern="^?{1,3}?[-.]?($?{1,4}?$?)[-.]?{1,4}[-.]?{1,9}$" class="form-input" placeholder="Telephone" required>
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:[a-zA-Z0-9-]+)*$/" class="form-input" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="frm-row-submit">
+                                <div class="frm-field">
+                                    <button type="submit" class="btn">Submit your application</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="elm-photo">
+                            <img src="./img/form.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/main-form-box-->
+
         </div>
         <!-- /page -->
 
 
         <!-- footer -->
         <footer class="footer">
-            <div class="inner-wrap">
-                333333
+            <!--footer-main-panel-->
+            <div class="footer-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="info-inner-wrap">
+                        <div class="email-wrap">
+                            <a href="mailto:info@mh.ru" class="link-email">info@mh.ru</a>
+                        </div>
+                        <div class="contacts-wrap">
+                            <div class="phone-wrap">
+                                <a href="tel:84951111111" class="link-phone">+7 (495) 111 11 11</a>
+                            </div>
+                            <p>г. Москва, 3-я ул. Ямского поля, д. 18</p>
+                        </div>
+                        <div class="soc-wrap">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-vk.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-tg.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-in.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-dzen.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--/footer-main-panel-->
+            <!--footer-bottom-panel-->
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="info-inner-wrap">
+                        <div class="info-wrap">
+                            <p>&copy;Copywriting, 2024</p>
+                        </div>
+                        <div class="info-wrap">
+                            <ul class="list">
+                                <li><a href="">Согласие на обработку персональных данных</a></li>
+                                <li><a href="">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/footer-bottom-panel-->
         </footer>
         <!-- /footer -->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-callback">
+            <div class="popup-box">
+                <a href="" class="btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Rate the features for free</div>
+                    <p>Fill out the application form — Manager He will contact you during business hours.</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-inner-wrap">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input" placeholder="Your name">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="tel" pattern="^?{1,3}?[-.]?($?{1,4}?$?)[-.]?{1,4}[-.]?{1,9}$" class="form-input" placeholder="Telephone" required>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:[a-zA-Z0-9-]+)*$/" class="form-input" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-button">
+                                <button type="submit" class="btn">Submit your application</button>
+                            </div>
+                            <div class="frm-field field-check">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup">
+                                    <label for="popup">By clicking the "<b>Submit your application”</b> button, you consent to the processing of your personal data and receiving
+                                        information messages from</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
 
     </div>
     <!-- /wrap -->
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
-    <script src="./js/scripts.js"></script>
+
 
 </body>
 
