@@ -146,10 +146,10 @@ for (i = 0; i < tabsButtonTitle.length; i++) {
 }
 for (i = 0; i < tabsNav.length; i++) {
 	tabsNav[i].addEventListener('click', function (e) {
-		if (e.target.closest('[data-tab]')) {
-			let tabsNavElements = this.querySelector('[data-tab].active')
+		if (e.target.closest('.js-tab-button[data-tab]')) {
+			let tabsNavElements = this.querySelector('.js-tab-button[data-tab].active')
 			tabsNavElements ? tabsNavElements.classList.remove('active') : false
-			e.target.closest('[data-tab]').classList.add('active')
+			e.target.closest('.js-tab-button[data-tab]').classList.add('active')
 			tabsActiveStart()
 			e.preventDefault()
 			e.stopPropagation()
