@@ -3,9 +3,11 @@
 \* ----------------------------------- */
 .swiper-slide-active {
 	.item-tile-info-step {
-		background-color: var(--clr-att-second);
-		color: #fff;
-		box-shadow: 0px -56px 16px 0px rgba(14, 77, 98, 0.00), 0px -36px 14px 0px rgba(14, 77, 98, 0.01), 0px -20px 12px 0px rgba(14, 77, 98, 0.05), 0px -9px 9px 0px rgba(14, 77, 98, 0.09), 0px -2px 5px 0px rgba(14, 77, 98, 0.10);
+		.tile-inner-wrap {
+			background-color: var(--clr-att-second);
+			color: #fff;
+			box-shadow: 0px -56px 16px 0px rgba(14, 77, 98, 0.00), 0px -36px 14px 0px rgba(14, 77, 98, 0.01), 0px -20px 12px 0px rgba(14, 77, 98, 0.05), 0px -9px 9px 0px rgba(14, 77, 98, 0.09), 0px -2px 5px 0px rgba(14, 77, 98, 0.10);
+		}
 		.tile-number {
 			color: #fff;
 		}
@@ -15,10 +17,16 @@
 .item-tile-info-step {
 	display: block;
 	position: relative;
-	border-radius: 30px;
-	background-color: var(--clr-bg-light);
-	padding: 40px 30px 30px 30px;
-	transition: all ease 0.2s;
+	.tile-inner-wrap {
+		display: block;
+		width: 100%;
+		flex-shrink: 0;
+		position: relative;
+		border-radius: 30px;
+		background-color: var(--clr-bg-light);
+		padding: 40px 30px 30px 30px;
+		transition: all ease 0.2s;
+	}
 	.tile-info {
 		display: block;
 		font-size: 14px;
@@ -34,6 +42,10 @@
 		color: inherit;
 		margin: 0 0 15px 0;
 		min-height: 100px;
+		transition: font-size ease 0.1s;
+	}
+	.title-large {
+		display: none;
 	}
 	.tile-text {
 		display: block;
@@ -354,6 +366,13 @@
 
 	}
 	.item-tile-info-step {
+		min-height: 510px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		.tile-inner-wrap {
+			transition: all ease 0.2s;
+		}
 		.tile-title {
 			min-height: 5.3;
 			line-height: 1.55;

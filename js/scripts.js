@@ -261,7 +261,7 @@ const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
   loop: false,
   slidesPerView: 1,
   spaceBetween: 0,
-  autoHeight: true,
+  autoHeight: false,
   speed: 400,
   initialSlide: 3,
   pagination: {

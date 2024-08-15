@@ -775,7 +775,7 @@ html {
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
-.swiper-slide-active .item-tile-info-step {
+.swiper-slide-active .item-tile-info-step .tile-inner-wrap {
   background-color: var(--clr-att-second);
   color: #fff;
   box-shadow: 0px -56px 16px 0px rgba(14, 77, 98, 0), 0px -36px 14px 0px rgba(14, 77, 98, 0.01), 0px -20px 12px 0px rgba(14, 77, 98, 0.05), 0px -9px 9px 0px rgba(14, 77, 98, 0.09), 0px -2px 5px 0px rgba(14, 77, 98, 0.1);
@@ -785,6 +785,13 @@ html {
 }
 .item-tile-info-step {
   display: block;
+  position: relative;
+}
+.item-tile-info-step .tile-inner-wrap {
+  display: block;
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
   border-radius: 30px;
   background-color: var(--clr-bg-light);
@@ -806,6 +813,10 @@ html {
   color: inherit;
   margin: 0 0 15px 0;
   min-height: 100px;
+  transition: font-size ease 0.1s;
+}
+.item-tile-info-step .title-large {
+  display: none;
 }
 .item-tile-info-step .tile-text {
   display: block;
@@ -1159,6 +1170,18 @@ html {
     font-weight: 600;
     line-height: 1.46;
     letter-spacing: -0.01em;
+  }
+  .item-tile-info-step {
+    min-height: 510px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .item-tile-info-step .tile-inner-wrap {
+    transition: all ease 0.2s;
   }
   .item-tile-info-step .tile-title {
     min-height: 5.3;
