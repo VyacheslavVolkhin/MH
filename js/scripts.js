@@ -188,6 +188,7 @@ document.querySelectorAll(".js-popup-close").forEach(function (element) {
 		popupsList[i
 			].classList.remove("active");
 		}
+	event.preventDefault();
 	event.stopPropagation();
 	});
 });
