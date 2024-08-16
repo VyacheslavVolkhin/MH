@@ -1574,6 +1574,34 @@ body.popup-open {
   display: -ms-flexbox;
   display: flex;
 }
+.popup-outer-box.popup-cookie {
+  -ms-flex-align: end;
+      align-items: flex-end;
+  background: none;
+}
+.popup-cookie .popup-box {
+  width: 800px;
+  border-radius: 10px;
+  padding: 10px 30px 10px 10px;
+}
+.popup-cookie .popup-box .popup-title-wrap {
+  font-size: 14px;
+  line-height: normal;
+  margin: 0;
+  text-align: left;
+}
+.popup-cookie .popup-box .popup-title-wrap p {
+  margin-bottom: 5px;
+}
+.popup-cookie .popup-box .btn-action-ico.ico-close {
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+}
+.popup-cookie .popup-box .btn-action-ico.ico-close:before {
+  background-size: 12px auto;
+}
 .popup-box {
   display: -ms-flexbox;
   display: flex;

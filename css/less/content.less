@@ -348,6 +348,33 @@ body.popup-open {
 	&.active {
 		display: flex;
 	}
+	&.popup-cookie {
+		align-items: flex-end;
+		background: none;
+	}
+}
+.popup-cookie {
+	.popup-box {
+		width: 800px;
+		border-radius: 10px;
+		padding: 10px 30px 10px 10px;
+		.popup-title-wrap {
+			font-size: 14px;
+			line-height: normal;
+			margin: 0;
+			text-align: left;
+			p {
+				margin-bottom: 5px;
+			}
+		}
+		.btn-action-ico.ico-close {
+			width: 30px;height: 30px;
+			top: 0;right: 0;
+			&:before {
+				background-size: 12px auto;
+			}
+		}
+	}
 }
 .popup-box {
 	display: flex;
