@@ -1990,6 +1990,25 @@ body.popup-open {
   }
 }
 @media (min-width: 1200px) {
+  .tiles-slider-box {
+    position: relative;
+  }
+  .tiles-slider-box .slider-inner-wrap {
+    position: relative;
+  }
+  .tiles-slider-box .slider-inner-wrap:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    background: linear-gradient(to right, #fff, rgba(0, 0, 0, 0));
+    margin-left: calc(-50dvw - 100px);
+    pointer-events: none;
+    z-index: 2;
+  }
   .tiles-info-box .box-inner-wrap {
     display: -ms-flexbox;
     display: flex;
@@ -2059,6 +2078,9 @@ body.popup-open {
   }
 }
 @media (min-width: 1400px) {
+  .tiles-slider-box .slider-inner-wrap:before {
+    margin-left: calc(-50dvw - 30px);
+  }
   .main-top-box .photo-inner-wrap .elm-photo {
     margin-right: -16rem;
   }

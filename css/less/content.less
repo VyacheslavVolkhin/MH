@@ -785,6 +785,24 @@ body.popup-open {
 }
 
 @media (min-width: 1200px) {
+	.tiles-slider-box {
+		position: relative;
+		.slider-inner-wrap {
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 0;bottom: 0;left: 50%;
+				width: 200px;
+				background: linear-gradient(to right, #fff, fade(#000, 0));
+				margin-left: calc(-50dvw - 100px);
+				pointer-events: none;
+				z-index: 2;
+			}
+		}
+	}
+
 	.tiles-info-box {
 		.box-inner-wrap {
 			display: flex;
@@ -857,6 +875,13 @@ body.popup-open {
 @media (min-width: 1024px) and (max-height: 899px) {
 }
 @media (min-width: 1400px) {
+	.tiles-slider-box {
+		.slider-inner-wrap {
+			&:before {
+				margin-left: calc(-50dvw - 30px);
+			}
+		}
+	}
 	.main-top-box {
 		.photo-inner-wrap {
 			.elm-photo {
