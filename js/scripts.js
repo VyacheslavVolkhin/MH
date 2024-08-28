@@ -270,7 +270,10 @@ const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
     el: ".slider-tiles-pagination",
     clickable: true,
   },
-  autoplay: false,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".btn-action-ico.ico-arrow.ico-arrow-next.button-slider-tiles-next",
     prevEl: ".btn-action-ico.ico-arrow.ico-arrow-prev.button-slider-tiles-prev",
