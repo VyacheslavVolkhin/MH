@@ -260,7 +260,7 @@ const swiperTabsMain = new Swiper(".slider-tabs-main .swiper", {
 
 //slider tiles
 const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
-  loop: false,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 0,
   autoHeight: false,

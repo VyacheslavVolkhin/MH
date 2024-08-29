@@ -1917,10 +1917,10 @@ body.popup-open {
     margin-bottom: 0;
   }
   .tiles-slider-box .ico-arrow-prev {
-    left: -10px;
+    left: 0;
   }
   .tiles-slider-box .ico-arrow-next {
-    right: -10px;
+    right: 0;
   }
   .before-after-box .items-wrap {
     margin: 0 -2rem -4rem -2rem;
