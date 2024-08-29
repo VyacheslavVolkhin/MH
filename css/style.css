@@ -1909,6 +1909,9 @@ body.popup-open {
   .tiles-slider-box .slider-inner-wrap {
     margin-left: 452px;
   }
+  .tiles-slider-box .slider-pagination {
+    display: none;
+  }
   .tiles-slider-box .title-box {
     font-size: 2rem;
     line-height: 1.4;
