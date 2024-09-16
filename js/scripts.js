@@ -260,10 +260,10 @@ const swiperTabsMain = new Swiper(".slider-tabs-main .swiper", {
 
 //slider tiles
 const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
-  loop: false,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 0,
-  autoHeight: false,
+  autoHeight: true,
   speed: 400,
   initialSlide: 3,
   pagination: {
@@ -279,8 +279,11 @@ const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
     prevEl: ".btn-action-ico.ico-arrow.ico-arrow-prev.button-slider-tiles-prev",
   },
   breakpoints: {
-    1024: {
-      autoHeight: false,
+    768: {
+      slidesPerView: 2,
+    },
+    1400: {
+      slidesPerView: 3,
     },
   },
 });
