@@ -1235,6 +1235,19 @@ html {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.video-box {
+  margin-bottom: 90px;
+}
+.video-box .video-js {
+  width: 100%;
+}
+.video-box .vjs-poster img {
+  object-fit: cover;
+}
+.video-box .my-player-dimensions {
+  height: auto;
+  aspect-ratio: 2/1.2;
+}
 .main-form-box .title-inner-wrap {
   text-align: center;
   margin-bottom: 15px;
