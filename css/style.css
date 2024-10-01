@@ -509,7 +509,6 @@ html {
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
   z-index: 10;
   padding: 40px 0;
-  padding: 40px 0;
   padding: 4rem 0;
   font-size: 14px;
   line-height: 20px;
@@ -1331,10 +1330,49 @@ html {
 }
 .tiles-slider-box .slider-pagination {
   padding-top: 15px;
-  width: 100dvw;
+  width: 300dvw !important;
   position: relative;
   left: 50%;
-  margin-left: -50dvw;
+  margin-left: -150dvw !important;
+  margin-right: 0 !important;
+  transform: none !important;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet {
+  left: auto !important;
+  transition: all ease 0.2s;
+  transform: scale(0.3);
+  margin: 0;
+  width: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet:has(+.swiper-pagination-bullet-active) {
+  transform: scale(1);
+  margin: 0 4px;
+  width: 24px;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet:has(+.swiper-pagination-bullet+.swiper-pagination-bullet-active) {
+  transform: scale(1);
+  margin: 0 4px;
+  width: 24px;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  transform: scale(1);
+  margin: 0 4px;
+  width: 90px;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active + .swiper-pagination-bullet {
+  transform: scale(1);
+  margin: 0 4px;
+  width: 24px;
+}
+.tiles-slider-box .slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active + .swiper-pagination-bullet + .swiper-pagination-bullet {
+  transform: scale(1);
+  margin: 0 4px;
+  width: 24px;
 }
 .tiles-slider-box .ico-arrow {
   position: absolute;
@@ -1377,12 +1415,10 @@ html {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 0 30px 0 0;
-  padding: 0 30px 0 0;
   padding: 0 3rem 0 0;
 }
 .info-box .photo-inner-wrap .elm-photo {
   max-width: inherit;
-  margin: 0 -40px 0 -16px;
   margin: 0 -40px 0 -16px;
   margin: 0 -4rem 0 -1.6rem;
 }
@@ -1487,7 +1523,6 @@ html {
   display: block;
 }
 .tiles-info-tabs-box .slider-tabs-pagination {
-  padding-top: 40px;
   padding-top: 40px;
   padding-top: 4rem;
 }
@@ -1682,7 +1717,6 @@ body.popup-open {
   position: relative;
   overflow: hidden;
   width: 705px;
-  width: 705px;
   width: 70.5rem;
   border-radius: 3rem;
   max-width: 100%;
@@ -1690,7 +1724,6 @@ body.popup-open {
   background-color: #fff;
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
   z-index: 20;
-  padding: 80px 80px 50px 80px;
   padding: 80px 80px 50px 80px;
   padding: 8rem 8rem 5rem 8rem;
   color: #1F3240;
@@ -1705,21 +1738,17 @@ body.popup-open {
 .popup-box .popup-title-wrap {
   text-align: center;
   font-size: 22px;
-  font-size: 22px;
   font-size: 2.2rem;
   line-height: 1.45454545;
-  margin-bottom: 40px;
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
 .popup-box .popup-title {
   font-size: 42px;
-  font-size: 42px;
   font-size: 4.2rem;
   font-weight: 600;
   line-height: 1.23809524;
   letter-spacing: normal;
-  margin-bottom: 24px;
   margin-bottom: 24px;
   margin-bottom: 2.4rem;
   color: inherit;
@@ -1727,26 +1756,21 @@ body.popup-open {
 .popup-box .btn-action-ico.ico-close {
   position: absolute;
   top: 30px;
-  top: 30px;
   top: 3rem;
-  right: 50px;
   right: 50px;
   right: 5rem;
   z-index: 2;
 }
 .popup-box .frm-field {
   margin-bottom: 20px;
-  margin-bottom: 20px;
   margin-bottom: 2rem;
 }
 .popup-box .frm-row-submit {
-  padding-top: 20px;
   padding-top: 20px;
   padding-top: 2rem;
 }
 .popup-box .field-button {
   text-align: center;
-  margin-bottom: 40px;
   margin-bottom: 40px;
   margin-bottom: 4rem;
 }
@@ -2224,7 +2248,6 @@ body.popup-open {
   border-radius: 50px;
   border-width: 1px;
   padding: 0 23px;
-  padding: 0 23px;
   padding: 0 2.3rem;
 }
 select.form-input {
@@ -2639,15 +2662,12 @@ select.form-input:required:invalid {
   letter-spacing: -0.01em;
   color: #97A2B2;
   padding-left: 40px;
-  padding-left: 40px;
   padding-left: 4rem;
 }
 .frm-select label:before,
 .frm-select label:after {
   width: 24px;
-  width: 24px;
   width: 2.4rem;
-  height: 24px;
   height: 24px;
   height: 2.4rem;
   border-radius: 4px;

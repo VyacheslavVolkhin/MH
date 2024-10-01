@@ -98,10 +98,48 @@
 	}
 	.slider-pagination {
 		padding-top: 15px;
-		width: 100dvw;
+		width: 300dvw !important;
 		position: relative;
 		left: 50%;
-		margin-left: -50dvw;
+		margin-left: -150dvw !important;
+		margin-right: 0 !important;
+		transform: none !important;
+		justify-content: center;
+		text-align: center;
+		.swiper-pagination-bullet {
+			left: auto !important;
+			transition: all ease 0.2s;
+			transform: scale(0.3);
+			margin: 0;
+			width: 0;
+			overflow: hidden;
+			border-radius: 12px;
+			&:has(+.swiper-pagination-bullet-active) {
+				transform: scale(1);
+				margin: 0 4px;
+				width: 24px;
+			}
+			&:has(+.swiper-pagination-bullet+.swiper-pagination-bullet-active) {
+				transform: scale(1);
+				margin: 0 4px;
+				width: 24px;
+			}
+			&.swiper-pagination-bullet-active {
+				transform: scale(1);
+				margin: 0 4px;
+				width: 90px;
+				&+.swiper-pagination-bullet {
+					transform: scale(1);
+					margin: 0 4px;
+					width: 24px;
+					&+.swiper-pagination-bullet {
+						transform: scale(1);
+						margin: 0 4px;
+						width: 24px;
+					}
+				}
+			}
+		}
 	}
 	.ico-arrow {
 		position: absolute;
